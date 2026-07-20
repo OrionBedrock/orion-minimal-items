@@ -23,10 +23,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(OrionServerBERoot)/src/PluginContracts/PluginContracts.csproj">
-      <Private>false</Private>
+    <PackageReference Include="Orion.PluginContracts" Version="0.1.0">
       <PrivateAssets>all</PrivateAssets>
-    </ProjectReference>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>

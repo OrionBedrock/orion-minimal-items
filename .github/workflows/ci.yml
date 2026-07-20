@@ -35,6 +35,7 @@ jobs:
 
       - name: Build plugin
         run: |
+          rm -rf "$HOME/.cache/orion-plugin-build"
           dotnet restore OrionCreativeFillers.csproj --configfile nuget.config --force-evaluate
           dotnet build OrionCreativeFillers.csproj -c Release --configfile nuget.config --no-restore
 

@@ -1,7 +1,6 @@
 {
   "id": "orion:creative-fillers",
   "version": "1.0.0",
-  "api": "0.1.0",
   "description": "Fills Construction / Equipment / Items so Bedrock creative tabs render.",
   "authors": ["Orion"],
   "main": "OrionCreativeFillers.OrionCreativeFillersPlugin",

@@ -9,17 +9,31 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>$(MSBuildThisFileDirectory)bin\</OutputPath>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <Version>0.1.0</Version>
+    <PackageId>Orion.Plugins.CreativeFillers</PackageId>
+    <Authors>OrionBedrock</Authors>
+    <Company>OrionBedrock</Company>
+    <Description>Orion Bedrock first-party plugin: orion:creative-fillers</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/OrionBedrock/orion-creative-fillers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OrionBedrock/orion-creative-fillers</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>orion;minecraft;bedrock;plugin</PackageTags>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\OrionServerBE\src\PluginContracts\PluginContracts.csproj">
+    <ProjectReference Include="$(OrionServerBERoot)/src/PluginContracts/PluginContracts.csproj">
       <Private>false</Private>
+      <PrivateAssets>all</PrivateAssets>
     </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>
     <None Update="plugin.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <PackagePath>content/plugins/orion.creative-fillers/</PackagePath>
     </None>
   </ItemGroup>
 

@@ -1,18 +1,21 @@
 # Orion Minimal Items
 
-Opt-in sample plugin loaded via McMaster (`plugin.json` + DLL). Enable `Plugins.Enabled` in `config/server.json`.
+Opt-in first-party plugin loaded via McMaster (`plugin.json` + DLL). Enable `Plugins.Enabled` in `config/server.json`.
 
 - **Manifest id:** `orion:minimal-items`
 - **PackageId:** `Orion.Plugins.MinimalItems`
-- **Provides:** `orion:creative-tab-fillers`
+- **Provides:** `orion:minimal-items`, `orion:creative-tab-fillers`
 
-Registers sample items in Bedrock creative tabs (Construction, Equipment, Items):
+Registers the six Bedrock blocks previously baked into the Orion host, Nature creative entries, and sample fillers for Construction / Equipment / Items:
 
-- `minecraft:cobblestone`
-- `minecraft:wooden_sword`
-- `minecraft:stick`
+| Kind | Identifiers |
+|------|-------------|
+| Blocks | `air`, `structure_void`, `bedrock`, `dirt`, `grass_block`, `barrier` |
+| Nature (creative) | `grass_block`, `dirt`, `bedrock` |
+| Allowlisted only | `barrier`, `structure_void` |
+| Tab fillers | `cobblestone` (1), `wooden_sword` (3), `stick` (4) |
 
-> Renamed from `orion:creative-fillers` / `Orion.Plugins.CreativeFillers`.
+> Supersedes `orion:creative-fillers` / `Orion.Plugins.CreativeFillers`.
 
 ## Build
 

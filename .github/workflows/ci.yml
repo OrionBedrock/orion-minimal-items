@@ -36,13 +36,13 @@ jobs:
       - name: Build plugin
         run: |
           rm -rf "$HOME/.cache/orion-plugin-build"
-          dotnet restore OrionCreativeFillers.csproj --configfile nuget.config --force-evaluate
-          dotnet build OrionCreativeFillers.csproj -c Release --configfile nuget.config --no-restore
+          dotnet restore OrionMinimalItems.csproj --configfile nuget.config --force-evaluate
+          dotnet build OrionMinimalItems.csproj -c Release --configfile nuget.config --no-restore
 
       - name: Unit tests
         run: |
-          dotnet restore tests/Orion.Plugins.CreativeFillers.Tests/Orion.Plugins.CreativeFillers.Tests.csproj --configfile nuget.config --force-evaluate
-          dotnet test tests/Orion.Plugins.CreativeFillers.Tests/Orion.Plugins.CreativeFillers.Tests.csproj -c Release --no-restore --verbosity minimal
+          dotnet restore tests/Orion.Plugins.MinimalItems.Tests/Orion.Plugins.MinimalItems.Tests.csproj --configfile nuget.config --force-evaluate
+          dotnet test tests/Orion.Plugins.MinimalItems.Tests/Orion.Plugins.MinimalItems.Tests.csproj -c Release --no-restore --verbosity minimal
 
       - name: Smoke boot server with plugin
         env:

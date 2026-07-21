@@ -4,7 +4,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
-    <RootNamespace>Orion.Plugins.CreativeFillers.Tests</RootNamespace>
+    <RootNamespace>Orion.Plugins.MinimalItems.Tests</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Using Include="Xunit" />
@@ -18,6 +18,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..${csproj}.csproj" />
+    <ProjectReference Include="..\..\OrionMinimalItems.csproj" />
   </ItemGroup>
 </Project>

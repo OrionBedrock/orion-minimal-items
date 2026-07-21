@@ -1,10 +1,10 @@
 {
-  "id": "orion:creative-fillers",
+  "id": "orion:minimal-items",
   "version": "1.0.0",
-  "description": "Fills Construction / Equipment / Items so Bedrock creative tabs render.",
+  "description": "Registers core Bedrock blocks/items (air, nature blocks) and sample creative tab fillers.",
   "authors": ["Orion"],
-  "main": "OrionCreativeFillers.OrionCreativeFillersPlugin",
+  "main": "OrionMinimalItems.OrionMinimalItemsPlugin",
   "depend": [],
   "softdepend": [],
-  "provides": ["orion:creative-tab-fillers"]
+  "provides": ["orion:minimal-items", "orion:creative-tab-fillers"]
 }

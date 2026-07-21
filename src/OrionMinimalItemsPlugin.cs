@@ -1,13 +1,13 @@
 using Orion.PluginContracts;
 
-namespace OrionCreativeFillers;
+namespace OrionMinimalItems;
 
 /// <summary>
 /// Sample opt-in plugin loaded exclusively via McMaster.
 /// </summary>
-public sealed class OrionCreativeFillersPlugin : IOrionPlugin
+public sealed class OrionMinimalItemsPlugin : IOrionPlugin
 {
-    public string Id => "orion:creative-fillers";
+    public string Id => "orion:minimal-items";
 
     public Version Version { get; } = new(1, 0, 0);
 

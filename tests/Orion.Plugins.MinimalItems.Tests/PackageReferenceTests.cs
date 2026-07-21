@@ -1,4 +1,4 @@
-namespace Orion.Plugins.CreativeFillers.Tests;
+namespace Orion.Plugins.MinimalItems.Tests;
 
 public sealed class PackageReferenceTests
 {
@@ -17,6 +17,7 @@ public sealed class PackageReferenceTests
         Assert.DoesNotContain("src/Orion.Gameplay.Api/", text, StringComparison.Ordinal);
         Assert.DoesNotContain("src/Binary/", text, StringComparison.Ordinal);
         Assert.Contains("PackageReference", text, StringComparison.Ordinal);
+        Assert.Contains("Orion.Plugins.MinimalItems", text, StringComparison.Ordinal);
     }
 
     static string PluginCsprojPath([System.Runtime.CompilerServices.CallerFilePath] string sourceFile = "")
